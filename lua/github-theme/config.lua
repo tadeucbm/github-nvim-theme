@@ -151,6 +151,7 @@ local defaults = {
 }
 
 M.module_names = {
+  'blink_cmp',
   'cmp',
   'coc',
   'coc_explorer',
@@ -171,11 +172,11 @@ M.module_names = {
   'neotree',
   'notify',
   'nvimtree',
+  'snacks',
   'telescope',
   'treesitter',
   'treesitter_context',
   'whichkey',
-  'blink_cmp',
 }
 
 ---@param name GhTheme.Theme
