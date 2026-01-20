@@ -2,7 +2,7 @@
 
 local M = {}
 
---@param spec GhTheme.Spec
+---@param spec GhTheme.Spec
 ---@param config GhTheme.Config.Options
 ---@param _opts GhTheme.Config.Module
 function M.get(spec, config, _opts)
@@ -13,12 +13,12 @@ function M.get(spec, config, _opts)
   -- stylua: ignore
   ---@type table<string, GhTheme.HighlightGroup>
   return {
-    BlinkCmpMenu              = { fg = spec.fg1, bg = spec.bg1 },
+    BlinkCmpMenu              = { fg = spec.fg1, bg = spec.bg2 },
     BlinkCmpMenuBorder        = { link = 'FloatBorder' },
 
     BlinkCmpDoc               = { fg = spec.fg1, bg = spec.bg1 },
     BlinkCmpDocBorder         = { link = 'FloatBorder' },
-    BlinkCmpDocSeparator      = { link = 'Keyword' },
+    BlinkCmpDocSeparator      = { link = 'FloatBorder' },
 
     BlinkCmpSource            = { link = 'Comment' },
 
