@@ -20,8 +20,8 @@ function M.get(spec, config, _opts)
     BlinkCmpScrollBarGutter   = { fg = spec.fg1, bg = spec.bg2 },
         
     BlinkCmpDoc               = { fg = spec.fg1, bg = spec.bg2 },
-    BlinkCmpDocBorder         = { link = '' },
-    BlinkCmpDocSeparator      = { link = 'FloatBorder' },
+    BlinkCmpDocBorder         = { link = 'FloatBorder' },
+    BlinkCmpDocSeparator      = { link = 'Constant' },
     BlinkCmpSource            = { link = 'Comment' },
 
     BlinkCmpLabel             = { fg = spec.fg1, },
@@ -33,8 +33,8 @@ function M.get(spec, config, _opts)
 
     BlinkCmpKind              = { fg = spec.fg2, },
     BlinkCmpKindKeyword       = { link = 'Keyword' },
-    BlinkCmpKindVariable      = { link = has_ts and '@variable' or  'Identifier' },
-    BlinkCmpKindConstant      = { link = has_ts and '@constant' or 'Constant' },
+    BlinkCmpKindVariable      = { link = '@variable' },
+    BlinkCmpKindConstant      = { link = '@constant' },
     BlinkCmpKindReference     = { link = 'Keyword' },
     BlinkCmpKindValue         = { link = 'Keyword' },
 
@@ -47,6 +47,7 @@ function M.get(spec, config, _opts)
     BlinkCmpKindUnit          = { link = '@unit' },
     BlinkCmpKindClass         = { link = '@class' },
     BlinkCmpKindStruct        = { link = '@type' },
+    
     BlinkCmpKindModule        = { link = '@module' },
     BlinkCmpKindProperty      = { link = '@property' },
     BlinkCmpKindField         = { link = '@variable.member' },
