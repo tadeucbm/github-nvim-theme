@@ -2,7 +2,7 @@
 
 local M = {}
 
----@param spec GhTheme.Spec
+--@param spec GhTheme.Spec
 ---@param config GhTheme.Config.Options
 ---@param _opts GhTheme.Config.Module
 function M.get(spec, config, _opts)
@@ -18,7 +18,7 @@ function M.get(spec, config, _opts)
 
     BlinkCmpDoc               = { fg = spec.fg1, bg = spec.bg1 },
     BlinkCmpDocBorder         = { link = 'FloatBorder' },
-    BlinkCmpDocSeparator      = { link = 'FloatBorder' },
+    BlinkCmpDocSeparator      = { link = 'Keyword' },
 
     BlinkCmpSource            = { link = 'Comment' },
 
