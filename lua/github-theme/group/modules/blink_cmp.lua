@@ -15,11 +15,13 @@ function M.get(spec, config, _opts)
   return {
     BlinkCmpMenu              = { fg = spec.fg1, bg = spec.bg2 },
     BlinkCmpMenuBorder        = { link = 'FloatBorder' },
-
-    BlinkCmpDoc               = { fg = spec.fg1, bg = spec.bg1 },
+    BlinkCmpMenuSelection     = { fg = spec.fg1, bg = spec.bg4, style = 'bold' },
+    BlinkCmpScrollBarThumb    = { fg = spec.fg1, bg = spec.bg4 },
+    BlinkCmpScrollBarGutter   = { fg = spec.fg1, bg = spec.bg2 },
+        
+    BlinkCmpDoc               = { fg = spec.fg1, bg = spec.bg3},
     BlinkCmpDocBorder         = { link = 'FloatBorder' },
     BlinkCmpDocSeparator      = { link = 'FloatBorder' },
-
     BlinkCmpSource            = { link = 'Comment' },
 
     BlinkCmpLabel             = { fg = spec.fg1, },
