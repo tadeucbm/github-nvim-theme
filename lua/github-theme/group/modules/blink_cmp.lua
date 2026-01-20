@@ -19,9 +19,17 @@ function M.get(spec, config, _opts)
     BlinkCmpScrollBarThumb    = { fg = spec.fg1, bg = spec.bg4 },
     BlinkCmpScrollBarGutter   = { fg = spec.fg1, bg = spec.bg2 },
         
-    BlinkCmpDoc               = { fg = spec.fg1, bg = spec.bg2 },
+    BlinkCmpDoc               = { fg = spec.fg1, bg = spec.bg0 },
     BlinkCmpDocBorder         = { link = 'FloatBorder' },
     BlinkCmpDocSeparator      = { link = 'Constant' },
+    BlinkCmpDocCursorLine     = { link = 'Visual' },
+
+    BlinkCmpSignatureHelp     = { fg = spec.fg1, bg = spec.bg0 },
+    BlinkCmpSignatureHelpBorder = { link = 'FloatBorder' },
+    BlinkCmpSignatureHelpActiveParameter = { link = 'LspSignatureActiveParameter' },
+
+    BlinkCmpGhostText         = { link = 'NonText' },
+
     BlinkCmpSource            = { link = 'Comment' },
 
     BlinkCmpLabel             = { fg = spec.fg1, },
